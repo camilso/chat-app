@@ -1,0 +1,87 @@
+@import './variables';
+
+.Loginright{
+  flex: 5;
+  .loginrightwrapper{
+    @include flex(100%);
+    padding-right: 220px;
+    span{
+      @include headline()
+    }
+    .formLogin{
+      .inputsLogin{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      .icon{
+        position: absolute;
+        left:60px;
+        top: 58px;
+        color: gray;
+      }
+      input{
+        font-family:'Courier New', Courier, monospace;
+        border: none;
+        outline:none;
+        background: none;
+        font-size: 18px;
+        color: #555;
+        padding:20px 20px 20px 85px;
+        margin-top: 40px;
+        border-radius: 25px;
+        box-shadow: inset 8px 8px 8px #cbced1,
+                    inset -8px -8px 8px #ffffff;
+      }
+    }
+    .errorLogin{
+      color:red;
+      margin-left: 100px;
+      margin-top: 20px;
+    }
+    button{
+      outline: none;
+      border:none;
+      cursor: pointer;
+      width: 20vw;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      height: 60px;
+      border-radius: 30px;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Lato', sans-serif;
+      color:#fff;
+      text-align: center;
+      background: $defaultColor;
+      box-shadow: 3px 3px 8px #b1b1b1,
+      -3px -3px 8px #ffffff;
+      transition: 0.5s;
+    }
+  }
+  .dontHaveAccount{
+    display: flex;
+    align-items: center;
+    .LinkLogin{
+      span{
+        font-size: 16px;
+        font-family:'Courier New', Courier, monospace;
+        opacity: 0.7;
+      }
+      .dontHaveAccount1{
+      color: gray;
+      margin-right: 10px;
+      }
+      .dontHaveAccount2{
+      color:rgb(65, 65, 65);
+      transition: 0.5s;
+      cursor: pointer;
+      &:hover{
+        color: $defaultColor
+        }
+      }
+    }
+  }
+  }
+}

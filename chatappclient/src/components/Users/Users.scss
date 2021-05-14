@@ -1,0 +1,20 @@
+.usersWrapper{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  .greenDot{
+    width: 10px;
+    height: 10px;
+    background-color: lawngreen;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-left: 20px;
+  }
+  span{
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+  }
+}

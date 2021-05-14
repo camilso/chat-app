@@ -1,0 +1,342 @@
+.popupAddRoom {
+  width: 100vw;
+  height: calc(100vh + 50px);
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  background-color: black;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popupInput {
+  width: 25%;
+  height: 44%;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popupInput .x {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  color: #2f2d52 !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.popupInput span {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 0 0;
+  font-family: "Open Sans", sans-serif;
+  color: #2f2d52;
+  font-size: 30px;
+  font-weight: bold;
+}
+.popupInput form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popupInput form .inputs {
+  position: relative;
+}
+.popupInput form .inputs .icon {
+  position: absolute;
+  color: gray;
+  top: 52%;
+  left: 9%;
+}
+.popupInput form .inputs input {
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 18px;
+  color: #555;
+  padding: 20px 20px 20px 85px;
+  margin-top: 20px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #ffffff;
+}
+.popupInput form .inputs input::-moz-placeholder {
+  font-size: 14px;
+}
+.popupInput form .inputs input:-ms-input-placeholder {
+  font-size: 14px;
+}
+.popupInput form .inputs input::placeholder {
+  font-size: 14px;
+}
+.popupInput form .error {
+  font-size: 16px;
+  color: red;
+  position: absolute;
+  top: 65%;
+}
+.popupInput form button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 18vw;
+  margin-top: 45px;
+  margin-bottom: 20px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  background: #2f2d52;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+.popupInput form button:hover {
+  background: #3f3d62;
+}
+
+.exit {
+  display: none;
+}
+
+.messanger {
+  width: 100vw;
+  height: 100vh;
+  margin: 50px 200px;
+}
+.messanger .messangerWrapper {
+  width: calc(100% - 400px);
+  height: calc(100% - 100px);
+  display: flex;
+}
+.messanger .messangerWrapper ::-webkit-scrollbar {
+  width: 0px;
+}
+.messanger .messangerWrapper ::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.messanger .messangerWrapper ::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+}
+.messanger .messangerWrapper .leftMessanger {
+  flex: 3;
+  height: 100%;
+  width: 100%;
+}
+.messanger .messangerWrapper .leftMessanger .usernameTop {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  background-color: #2f2d52;
+  color: white;
+}
+.messanger .messangerWrapper .leftMessanger .usernameTop span {
+  margin-left: 20px;
+}
+.messanger .messangerWrapper .leftMessanger .usernameTop .icon {
+  cursor: pointer;
+  margin-left: 5px !important;
+}
+.messanger .messangerWrapper .leftMessanger .search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #3f3d62;
+}
+.messanger .messangerWrapper .leftMessanger .search .iconSearch {
+  color: white !important;
+  margin: 0 10px 0 20px !important;
+}
+.messanger .messangerWrapper .leftMessanger .search input {
+  width: calc(100% - 100px);
+  height: 35px;
+  font-size: 16px;
+  color: white;
+  background: none;
+  border: none;
+}
+.messanger .messangerWrapper .leftMessanger .search input::-moz-placeholder {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+}
+.messanger .messangerWrapper .leftMessanger .search input:-ms-input-placeholder {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+}
+.messanger .messangerWrapper .leftMessanger .search input::placeholder {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  opacity: 0.7;
+}
+.messanger .messangerWrapper .leftMessanger .search input:focus {
+  outline: none;
+}
+.messanger .messangerWrapper .leftMessanger .roomHeadline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2f2d52;
+  padding: 20px 0;
+}
+.messanger .messangerWrapper .leftMessanger .roomHeadline .headline {
+  font-size: 20px;
+  margin-left: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.messanger .messangerWrapper .leftMessanger .roomHeadline .iconAdd {
+  color: white !important;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.messanger .messangerWrapper .leftMessanger .rooms {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc((100% - 293px) / 2);
+  background-color: #3f3d62;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.messanger .messangerWrapper .leftMessanger .usersOnline {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc((100% - 217px) / 2);
+  background-color: #3f3d62;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.messanger .messangerWrapper .leftMessanger .usersOnline .headline {
+  font-size: 20px;
+  padding: 20px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 10px;
+  background-color: #2f2d52;
+}
+.messanger .messangerWrapper .leftMessanger .logout {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #2f2d52;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+.messanger .messangerWrapper .leftMessanger .logout span {
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 20px;
+}
+.messanger .messangerWrapper .leftMessanger .logout .icon {
+  margin-right: 35px;
+  cursor: pointer;
+}
+.messanger .messangerWrapper .rightMessanger {
+  flex: 7;
+  height: 100%;
+  width: 100%;
+}
+.messanger .messangerWrapper .rightMessanger .descTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: #5e5c8e;
+}
+.messanger .messangerWrapper .rightMessanger .descTop span {
+  margin-left: 20px;
+  font-size: 16px;
+  color: white;
+}
+.messanger .messangerWrapper .rightMessanger .descTop .icons {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.messanger .messangerWrapper .rightMessanger .descTop .icons .person {
+  cursor: pointer;
+}
+.messanger .messangerWrapper .rightMessanger .descTop .icons .moreDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 30px !important;
+  background-color: #545281 !important;
+  height: 60px;
+  width: 60px;
+}
+.messanger .messangerWrapper .rightMessanger .descTop .icons .moreDiv .more {
+  cursor: pointer;
+}
+.messanger .messangerWrapper .rightMessanger .chatBox {
+  width: 100%;
+  height: calc(100% - 118px);
+  background-color: #ddddf7;
+  overflow-y: scroll;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom {
+  width: 100%;
+  height: 60px;
+  background-color: #a09ec0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom input {
+  background: none;
+  width: 60%;
+  height: 50%;
+  margin-left: 20px;
+  border: none;
+  font-size: 16px;
+  color: white;
+  opacity: 0.7;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom input::-moz-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom input:-ms-input-placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom input::placeholder {
+  font-size: 16px;
+  color: white;
+  opacity: 0.5;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom input:focus {
+  outline: none;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom .icons {
+  margin-right: 50px;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom .icons .attach {
+  color: white !important;
+  margin-right: 20px;
+}
+.messanger .messangerWrapper .rightMessanger .inputBottom .icons .emoji {
+  color: white !important;
+}/*# sourceMappingURL=Home.css.map */

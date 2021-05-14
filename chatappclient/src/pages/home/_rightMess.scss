@@ -1,0 +1,82 @@
+@import './variables';
+
+.rightMessanger{
+  flex: 7;
+  height: 100%;
+  width: 100%;
+  .descTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    background-color: $light;
+    span{
+      margin-left: 20px;
+      font-size: 16px;
+      color: white;
+    }
+    .icons{
+      display: flex;
+      align-items: center;
+      color: white;
+      .person{
+        cursor: pointer;
+      }
+      .moreDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px !important;
+        background-color: #545281 !important;
+        height: 60px;
+        width: 60px;
+        .more{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .chatBox{
+    width: 100%;
+    height: calc(100% - 118px);
+    background-color: #ddddf7;
+    overflow-y: scroll;
+  }
+  .inputBottom{
+    width: 100%;
+    height: 60px;
+    background-color: #a09ec0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+      background: none;
+      width: 60%;
+      height: 50%;
+      margin-left: 20px;
+      border:none;
+      font-size: 16px;
+      color: white;
+      opacity: 0.7;
+      &::placeholder{
+        font-size: 16px;
+        color: white;
+        opacity: 0.5;
+      }
+      &:focus{
+        outline: none;
+      }
+    }
+    .icons{
+      margin-right: 50px;
+      .attach{
+        color: white !important;
+        margin-right: 20px;
+      }
+      .emoji{
+        color: white !important;
+      }
+    }
+  }
+}

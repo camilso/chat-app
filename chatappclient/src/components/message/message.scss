@@ -1,0 +1,69 @@
+@import '../../pages/home/variables';
+
+.MyMessage{
+  display: flex;
+  padding: 20px 0 20px 20px;
+  .desc{
+    display: flex;
+    flex-direction: column;
+    .name{
+      font-family: $font;
+      font-size: 16px;
+    }
+    .time{
+      font-family: $font;
+      font-size: 11px;
+      color: gray;
+    }
+  }
+  .messageBox{
+    padding: 15px;
+    max-width: 40%;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: white;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    .delete{
+      opacity: 0.5;
+      font-style: italic;
+    }
+  }
+  .x{
+    color: red;
+    cursor: pointer;
+    width: 17px;
+    height: 17px;
+  }
+}
+.OtherMessage{
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 20px 0px;
+  .desc{
+    display: flex;
+    flex-direction: column;
+    .name{
+      font-family: $font;
+      font-size: 16px;
+    }
+    .time{
+      font-family: $font;
+      font-size: 11px;
+      color: gray;
+    }
+  }
+  .messageBox{
+    padding: 15px;
+    max-width: 40%;
+    margin-top: 10px;
+    margin-right: 10px;
+    background: $Darker;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+  }
+}

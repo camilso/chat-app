@@ -1,0 +1,126 @@
+@import './variables';
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+::-webkit-scrollbar-track{
+  background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+  background-color: rgb(179, 179, 179);
+}
+.leftMessanger{
+  flex: 3;
+  height: 100%;
+  width: 100%;
+    .usernameTop{
+      width: 100%;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-family: $font;
+      font-size: 20px;
+      background-color: $Darker;
+      color: white;
+
+      span{
+        margin-left: 20px;
+      }
+      .icon{
+        cursor: pointer;
+        margin-left: 5px !important;
+      }
+    }
+    .search{
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 60px;
+      background-color: $Dark;
+      .iconSearch{
+        color: white !important;
+        margin: 0 10px 0 20px !important;
+      }
+      input{
+        width: calc(100% - 100px);
+        height: 35px;
+        font-size: 16px;
+        color:white;
+        &::placeholder{
+          color: white;
+          font-family: $font;
+          opacity: 0.7;
+        }
+        &:focus{
+          outline: none;
+        }
+        background: none;
+        border: none;
+      }
+    }
+    .roomHeadline{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: $Darker;
+      padding: 20px 0;
+
+    .headline{
+      font-size: 20px;
+      margin-left: 20px;
+      color: white;
+      font-family: $font;
+    }
+    .iconAdd{
+      color: white !important;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  }
+    .rooms{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc((100% - 293px) / 2);
+      background-color:$Dark;
+      overflow-y: scroll;
+      overflow-x: hidden;
+    }
+    .usersOnline{
+      padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: calc((100% - 217px) / 2);
+      background-color: $Dark;
+      overflow-y: scroll;
+      overflow-x: hidden;
+      .headline{
+        font-size: 20px;
+        padding: 20px;
+        color: white;
+        font-family: $font;
+        margin-top: 10px;
+        background-color: $Darker;
+      }
+    }
+    .logout{
+      display: flex;
+      width: 100%;
+      height: 60px;
+      background-color: $Darker;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+      span{
+        font-size: 20px;
+        font-family: $font;
+        margin-left: 20px;
+      }
+      .icon{
+        margin-right: 35px;
+        cursor: pointer;
+      }
+    }
+}

@@ -1,0 +1,67 @@
+.MyMessage {
+  display: flex;
+  padding: 20px 0 20px 20px;
+}
+.MyMessage .desc {
+  display: flex;
+  flex-direction: column;
+}
+.MyMessage .desc .name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.MyMessage .desc .time {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: gray;
+}
+.MyMessage .messageBox {
+  padding: 15px;
+  max-width: 40%;
+  margin-top: 10px;
+  margin-left: 20px;
+  background: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.MyMessage .messageBox .delete {
+  opacity: 0.5;
+  font-style: italic;
+}
+.MyMessage .x {
+  color: red;
+  cursor: pointer;
+  width: 17px;
+  height: 17px;
+}
+
+.OtherMessage {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 20px 20px 0px;
+}
+.OtherMessage .desc {
+  display: flex;
+  flex-direction: column;
+}
+.OtherMessage .desc .name {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+.OtherMessage .desc .time {
+  font-family: "Open Sans", sans-serif;
+  font-size: 11px;
+  color: gray;
+}
+.OtherMessage .messageBox {
+  padding: 15px;
+  max-width: 40%;
+  margin-top: 10px;
+  margin-right: 10px;
+  background: #2f2d52;
+  color: white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}/*# sourceMappingURL=message.css.map */

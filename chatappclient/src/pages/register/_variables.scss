@@ -1,0 +1,17 @@
+$defaultColor: #2f2d52;
+
+@mixin flex($height){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: $height;
+}
+
+@mixin headline{
+  font-family: 'Krona One', sans-serif;
+  color: $defaultColor;
+  font-weight: bold;
+  margin-top: 20px;
+  font-size: 52px;
+}
